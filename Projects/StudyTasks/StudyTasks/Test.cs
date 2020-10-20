@@ -6,9 +6,9 @@ namespace StudyTasks
 {
     class Test
     {
-        public void Foo()
+        public void Testum()
         {
-
+            
         }
     }
 }
