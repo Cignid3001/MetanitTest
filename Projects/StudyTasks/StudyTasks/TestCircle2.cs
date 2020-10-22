@@ -14,7 +14,7 @@ namespace StudyTasks
             int month = Convert.ToInt32(Console.ReadLine());
             while (month > 0)
             {
-                vklad = vklad * 0.7M;
+                vklad = vklad * 1.07M;
                 month -= 1;
             }
             Console.WriteLine($"Сумма вклада через указанное вами количество месяцев будет составлять {vklad}");

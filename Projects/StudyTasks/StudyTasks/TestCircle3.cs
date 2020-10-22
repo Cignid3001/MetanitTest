@@ -12,10 +12,11 @@ namespace StudyTasks
             {
                 for (int second = 0; second <= 10; second++)
                 {
-                    Console.WriteLine($"{first} * {second} = {first * second}\t");
+                    Console.Write($"{first} * {second} = {first * second}\t");
                 }
                 Console.WriteLine();
             }
+            Console.ReadKey();
         }
     }
 }

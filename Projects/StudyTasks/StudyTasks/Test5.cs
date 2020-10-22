@@ -10,26 +10,25 @@ namespace StudyTasks
         {
             Console.WriteLine("Введите сумму вклада");
             double vklad = Convert.ToDouble(Console.ReadLine());
-            double mnojitel = 0;
+            double mnojitel;
             if (vklad >= 0)
-                if (vklad <= 100)
-                {
-                    mnojitel = 1.05;
-                }
-                else if (vklad <= 200)
-                {
-                    mnojitel = 1.07;
-                }
-                else
-                {
-                    mnojitel = 1.1;
-                }
-            else
             {
                 Console.WriteLine("Сумма вклада не может быть меньше 0");
                 return;
             }
-            Console.WriteLine($"Сумма вашего вклада будет составлять {vklad * mnojitel}");
+            if (vklad <= 100)
+            {
+                mnojitel = 1.05;
+            }
+            else if (vklad <= 200)
+            {
+                mnojitel = 1.07;
+            }
+            else
+            {
+                mnojitel = 1.1;
+            }
+            Console.WriteLine($"Сумма вашего вклада будет составлять {vklad * mnojitel + 15}");
         }
     }
 }
